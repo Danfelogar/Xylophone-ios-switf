@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
-        print(sender.titleLabel?.text!)
+        //print(sender.titleLabel?.text!)
         sender.alpha = 0.5
         playSound(letter: ("\(sender.currentTitle!)"))
         DispatchQueue.main.asyncAfter(deadline: .now()+0.2, execute: {
